@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --Orangy-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* background */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  /* circle */
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+.row .col-1 {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-1 .result {
+  color: var(--Light-lavender);
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.circile {
+  background: linear-gradient(hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+  text-align: center;
+  padding: 50px;
+}
+
+.circile span {
+  display: block;
+}
+
+.row .col-1 .circile .number {
+  font-size: 60px;
+  color: var(--White);
+  font-weight: 900;
+}
+
+.row .col-1 .circile .light {
+  color: var(--Light-lavender);
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.row .col-1 .setiuation {
+  color: var(--White);
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+
+.row .col-1 .discription {
+  text-align: center;
+}
+.row .col-1 .discription p {
+  color: var(--Light-lavender);
+  font-size: 18px;
+}
+
+.row .col-2 {
+  padding: 20px;
+  width: 300px;
+  background-color: var(--White);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 10px 10px 10px var(--Pale-blue);
+}
+
+.summary {
+  color: var(--Dark-gray-blue);
+}
+
+.row .col-2 ul {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+li span {
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+  margin-left: 60px;
+  display: inline-block;
+}
+
+.row .col-2 ul li {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* conrner border */
+/* .row .col-2 ul li ::after {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+.row .col-2 ul li ::before {
+  border-left: 1px solid;
+  border-top: 1px solid;
+} */
+
+#reaction {
+  background-color: hsl(0, 35%, 92%);
+  color: var(--light-red);
+}
+#memory {
+  background-color: hsl(50, 88%, 91%);
+  color: var(--Orangy-yellow);
+}
+
+#verbal {
+  color: var(--green-teal);
+  background-color: hsl(167, 43%, 90%);
+}
+
+#visual {
+  color: var(--cobalt-blue);
+  background-color: hsl(233, 41%, 87%);
+}
+
+.continue-button {
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  padding: 20px 80px;
+  display: inline-block;
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 1.6rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.continue-button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+  cursor: pointer;
+}
