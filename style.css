@@ -31,13 +31,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vh;
+  hight:100vh
+ 
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  margin: 2rem;
+ 
 }
 
 .row .col-1 {
@@ -127,17 +128,7 @@ li span {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-
-/* conrner border */
-/* .row .col-2 ul li ::after {
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-}
-
-.row .col-2 ul li ::before {
-  border-left: 1px solid;
-  border-top: 1px solid;
-} */
+ 
 
 #reaction {
   background-color: hsl(0, 35%, 92%);
